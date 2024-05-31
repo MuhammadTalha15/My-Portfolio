@@ -22,7 +22,7 @@ const Second = () => {
             <section className="cont left">
               <h2 className='heading-cont'>I am Dynamic and Creative.</h2>
 
-              <p className='opening'>I am an Intermediate Computer Science student with a fervent love for programming.With a foundation built on both Intermediate and Beginner-level creations, I am on a journey to evolve into a seasoned Computer Scientist.</p>
+              <p className='opening'>.With a foundation built on both Intermediate and Beginner-level creations, I am on a journey to evolve into a seasoned Computer Scientist.</p>
 
               <p className="second-para">As an intermediate-level computer science student, I am deeply immersed in various technology projects, showcasing a versatile skill set in web development, desktop applications, and data science. My primary tools include JavaScript, Python, React, Express, MongoDB, and C++. Javascript, React are done for my Frontend Projects, comprising Express and MongoDB responsible for Backend. Python is done for Data Science and Desktop Application with company of C++.</p>
 
