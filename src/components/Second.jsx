@@ -22,7 +22,7 @@ const Second = () => {
             <section className="cont left">
               <h2 className='heading-cont'>I am Dynamic and Creative.</h2>
 
-              <p className='opening'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quibusdam, ratione reiciendis unde distinctio quisquam fugit, eos id rem ex.</p>
+              <p className='opening'>I am an Intermediate Computer Science student with a fervent love for programming.With a foundation built on both Intermediate and Beginner-level creations, I am on a journey to evolve into a seasoned Computer Scientist.</p>
 
               <p className="second-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consectetur perspiciatis aut ab harum blanditiis omnis quae. Nemo, aliquam fugiat soluta voluptate cupiditate beatae saepe fugit iure delectus cumque alias!
                 Non corporis aliquam consequuntur vitae maiores reprehenderit a totam. Cum reprehenderit saepe quidem sed esse perspiciatis expedita itaque iure mollitia, quia vero suscipit sapiente incidunt dolores ab adipisci, soluta architecto!</p>
