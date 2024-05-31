@@ -1,0 +1,174 @@
+
+:root{
+    --Poppins: 'Poppins',sans-serif;
+    --font-color-default: #fff;
+}
+
+.second{
+    height: 100vh;
+    width: 100%;
+    background-color: #0a0d13;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.s-header{
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-head{
+    position: relative;
+    font-size: 12rem;
+    font-family: var(--Poppins);
+    color: rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+.s-head::after{
+    position: absolute;
+    content: 'Who am I?';
+    font-weight: 300;
+    width: 20rem;
+    color: #bbbbbb;
+    font-size: 3.5rem;
+    top: 35%;
+    left: 30%;
+}
+
+.s-content{
+    position: relative;
+    height: 50rem;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.cont{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid; */
+}
+
+.left{
+    padding: 5rem 5rem;
+}
+
+.heading-cont{
+    color: var(--font-color-default);
+    font-size: 3rem;
+    font-family: var(--Poppins);
+    font-weight: 400;
+}
+
+.opening{
+    font-family: var(--Poppins);
+    color: var(--font-color-default);
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+.second-para{
+    font-family: var(--Poppins);
+    color: var(--font-color-default);
+    font-size: 1.5rem;
+}
+
+.s-btn{
+    height: 5rem;
+    width: 20rem;
+    margin: 5rem 0;
+    background-color: transparent;
+    font-family: var(--Poppins);
+    border: 1px solid var(--font-color-default);
+    color: var(--font-color-default);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.cv{
+    background-color: var(--font-color-default);
+    color: black;
+    width: 25rem;
+    border: none;
+    font-weight: 500;
+    z-index: 100000000;
+}
+
+.cv:hover{
+    background-color: #bbbbbb;
+    color: #000;
+    border: none;
+}
+
+.slrn{
+    margin: 0 2rem;
+    font-weight: 400;
+}
+
+.slrn:hover{
+    background-color: var(--font-color-default);
+    color: #000;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.details{
+    height: 40rem;
+    width: 60rem;
+    display: flex;
+}
+
+.dtail-list{
+    list-style: none;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    width: 15rem;
+    padding: 0 2rem;
+}
+
+.dtail-li-hd{
+    margin: 2rem 0;
+    font-family: var(--Poppins);
+    color: #bbbbbb;
+    font-size: 1.5rem;
+}
+
+.dtail-val{
+    margin: 0 2rem;
+}
+
+.data-list{
+    list-style: none;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    width: 45rem;
+    padding: 0 2rem;
+}
+
+.dtail-data{
+    margin: 2rem 0;
+    font-family: var(--Poppins);
+    color: #a7a7a7;
+    font-size: 1.5rem;
+}
+
+.polygon-ii{
+    position: absolute;
+    left: -35%;
+    top: 50%;
+    pointer-events: none;
+}

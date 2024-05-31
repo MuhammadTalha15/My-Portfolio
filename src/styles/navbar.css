@@ -1,0 +1,144 @@
+
+header{
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7rem;
+    z-index: 100;
+}
+
+.logo{
+    width: 25rem;
+}
+
+.navbar{
+    height: 50%;
+    width: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li.nav-li{
+    position: relative;
+    font-size: 1.7rem;
+    display: inline-block;
+    margin: 0 2.5rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: #fff;
+}
+
+ul li.nav-li::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: #fff;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+
+ul li.nav-li:hover::after{
+    width: 100%;
+}
+
+.btnWrpr{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbarBtn{
+    width: 3.7rem;
+}
+
+@media(max-width: 1280px){
+    .logo{
+        width: 20rem;
+    }
+
+    .navbar{
+        width: 48rem;
+    }
+
+    li.nav-li{
+        font-size: 1.5rem;
+        gap: 1.5rem;
+    }
+}
+
+@media(max-width: 1024px){
+    header{
+        padding: 0 5rem;
+    }
+}
+
+@media(max-width: 990px){
+    html{
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 600px){
+
+    .navbar{
+        position: absolute;
+        top: -50rem;
+        left: 0;
+        height: 50rem;
+        width: 100%;
+        background-color: #0f131abe;
+        transition: 0.3s;
+        z-index: -10;
+    }
+    .navbar-active{
+        position: absolute;
+        top: 10rem;
+        left: 0;
+        height: 90vh;
+        width: 100%;
+        background-color: #0f131abe;
+        transition: 0.3s;
+        z-index: -10;
+    }
+
+    ul{
+        height: 100%;
+        width: 100%;
+        list-style: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    ul li.nav-li{
+        position: relative;
+        font-size: 2.2rem;
+        display: inline-block;
+        margin: 5rem 2.5rem;
+        font-family: sans-serif;
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+@media(min-width: 601px){
+    .btnWrpr{
+        display: none;
+    }
+    .navbarBtn{
+        display: none;
+    }
+}
