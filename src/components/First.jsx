@@ -41,7 +41,7 @@ const First = () => {
             </div>
           </div>
 
-          <img className='polygon-i' src={Polygon} alt="" />
+          {/* <img className='polygon-i' src={Polygon} alt="" /> */}
         </section>
     </>
   )

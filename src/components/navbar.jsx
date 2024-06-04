@@ -4,6 +4,7 @@ import React from 'react'
 import '../styles/navbar.css'
 import Logo from '../assets/Logo/logo.png';
 import AppIconWhite from '../assets/Icons/white.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
   const [navbarClass, setnavbarClass] = useState('navbar');
@@ -15,13 +16,13 @@ const Navbar = (props) => {
   return (
     <>
     <header className='header'>
-      <img className='logo' src={Logo} alt="" />
+      <Link to="/My-Portfolio"><img className='logo' src={Logo} alt="" /></Link>
       <nav id='nav' className={navbarClass}>
         <ul>
-          <li className='nav-li'>About Me</li>
-          <li className='nav-li'>Projects</li>
-          <li className='nav-li'>Articals</li>
-          <li className='nav-li'>Contact Me</li>
+          <Link to="/about"><li className='nav-li'>About Me</li></Link>
+          <Link to="/projects"><li className='nav-li'>Projects</li></Link>
+          <Link to="/"><li className='nav-li'>Articals</li></Link>
+          <Link to="/contact"><li className='nav-li'>Contact Me</li></Link>
         </ul>
       </nav>
 
