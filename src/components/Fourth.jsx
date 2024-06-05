@@ -1,5 +1,4 @@
 import React from 'react'
-import Polygon from '../assets/Logo/pngwing.com.png'
 import '../styles/fourth.css'
 
 const Fourth = () => {
@@ -24,7 +23,6 @@ const Fourth = () => {
               </div>
             </div>
           </section>
-          <img className='poly-iv' src={Polygon} alt="" />
         </section>
     </>
   )

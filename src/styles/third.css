@@ -7,12 +7,16 @@
 .third{
     height: 100vh;
     width: 100%;
-    background-color: #0f131a;
+    background-color: #131313;
     overflow: hidden;
+    background-image: linear-gradient(rgba(19, 19, 19, 0.7), rgba(19, 19, 19, 0.7)),url(../assets/Images/right.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .t-header{
     height: 20rem;
+    padding-top: 10rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -24,24 +28,23 @@
     position: relative;
     font-size: 12rem;
     font-family: var(--Poppins);
-    color: rgba(0, 0, 0, 0.404);
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgb(0, 202, 78);
     user-select: none;
 }
 
-.t-head::after{
+.t-head-after{
     position: absolute;
-    content: "What I've done so Far";
     font-weight: 300;
     width: 40rem;
-    color: #bbbbbb;
+    font-family: var(--Poppins);
+    color: #e7e7e7;
     font-size: 3.5rem;
-    top: 35%;
-    left: 20%;
 }
 
 .prjct-cont-cnt{
     position: relative;
-    height: 55rem;
+    height: 60rem;
     width: 100%;
     /* border: 1px solid; */
     display: flex;
@@ -49,78 +52,150 @@
     justify-content: center;
     padding: 0 10rem;
     margin-bottom: 5rem;
+    /* border: 1px solid; */
 }
 
 .projects{
     height: 50rem;
-    width: 75rem;
+    width: 100%;    
     /* border: 1px solid; */
-    margin: 0 3rem;
+    margin: 0 5rem;
     display: flex;
     flex-wrap: wrap;
 }
 
-.fr-js-pr{
-    height: 25rem;
-    width: 25rem;
-    border: 1px solid rgba(0, 0, 0, 0.404);
-    background-image: linear-gradient(rgba(10,13,19,0.5),rgba(10,13,19,0.5)),url(../assets/Images/pexels-monoar-rahman-22660-109371.jpg);
-    background-size: cover;
-    background-position: center;
+.para-cnt, 
+.prjct-icons-cnt{
+    height: 50rem;
+    width: 50%;
+    /* border: 1px solid; */
+    padding: 3rem 5rem;
 }
 
-.sc-rt-rd{
-    height: 25rem;
-    width: 50rem;
-    border: 1px solid rgba(0, 0, 0, 0.404);
-    background-image: linear-gradient(rgba(10,13,19,0.5),rgba(10,13,19,0.5)),url(../assets/Images/pexels-joshsorenson-1714208.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.td-py-ml{
-    height: 25rem;
-    width: 50rem;
-    border: 1px solid rgba(0, 0, 0, 0.404);
-    background-image: linear-gradient(rgba(10,13,19,0.5),rgba(10,13,19,0.5)),url(../assets/Images/pexels-kevin-ku-92347-577585.jpg);
-    background-size: cover;
-    background-position: 0rem -10rem;
-}
-
-.ft-bk-nd{
-    height: 25rem;
-    width: 25rem;
-    border: 1px solid rgba(0, 0, 0, 0.404);
-    background-image: linear-gradient(rgba(10,13,19,0.5),rgba(10,13,19,0.5)),url(../assets/Images/pexels-djordje-petrovic-590080-2102416.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.prjct-hd{
+.prjct-heading-cont{
     color: var(--font-color-default);
+    font-size: 3rem;
     font-family: var(--Poppins);
-    font-size: 1.8rem;
-    font-weight: 300;
-    margin: 1rem 2rem;
-    margin-top: 15rem;
+    font-weight: 400;
 }
 
-.prjct-a{
-    color: var(--font-color-default);
+.prjct-para{
     font-family: var(--Poppins);
+    color: var(--font-color-default);
     font-size: 1.5rem;
-    font-weight: 300;
+}
+
+.prjct-par-frst{
+    font-family: var(--Poppins);
+    color: #fff;
+    font-size: 1.45rem;
+    line-height: 3rem;
+}
+
+.prjct-btn{
+    position: relative;
+    height: 5rem;
+    width: 25rem;
+    margin: 5rem 0;
+    background-color: transparent;
+    color: rgb(0, 202, 78);
+    border: 1px solid rgb(0, 202, 78);
+    font-weight: 400;
+    font-size: 1.5rem;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--Poppins);
     text-decoration: none;
-    margin: 0 2rem;
 }
 
-.prjct-a:hover{
-    text-decoration: underline;
+.prjct-btn:hover{
+    background-color: #fff;
+    color: #000;
+    border: none;
 }
 
-.polygon-iii{
-    position: absolute;
-    right: -30%;
-    top: 40%;
-    pointer-events: none;
+.github-ico{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-image: url(../assets/Icons/github.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 .5rem;
+    filter: invert(60%) sepia(72%) saturate(3480%) hue-rotate(105deg) brightness(99%) contrast(101%);
 }
+
+.prjct-icons-cnt{
+    display: flex;
+    flex-direction: column;
+}
+
+.ico-bx-cnt{
+    /* border: 1px solid; */
+    margin: 2rem 0;
+    height: 35rem;
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.tech-cnt{
+    height: 15rem;
+    width: 15rem;
+    border: 2px solid rgb(0, 202, 78);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tech-cnt:hover{
+    border: 2px solid #fff;
+    background-color: #dadada;
+}
+
+.tech-cnt:hover .title{
+    color: #000;
+}
+
+.icon-cnt{
+    height: 5rem;
+    width: 5rem;
+    background-size: cover;
+    background-position: center;
+    filter: invert(60%) sepia(72%) saturate(3480%) hue-rotate(105deg) brightness(99%) contrast(101%);
+}
+
+.h{
+    background-image: url(../assets/Logo/html.png);
+}
+.j{
+    background-image: url(../assets/Logo/js.png);
+}
+.r{
+    background-image: url(../assets/Logo/react.png);
+}
+.p{
+    background-image: url(../assets/Logo/py.png);
+}
+.c{
+    background-image: url(../assets/Logo/cpp.png);
+}
+
+.title{
+    font-family: var(--Poppins);
+    font-weight: 500;
+    color: rgb(0, 202, 78);
+    margin-top: 2rem;
+    user-select: none;
+}
+
+
+/* ------------------ */

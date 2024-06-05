@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/second.css'
-import Polygon from '../assets/Logo/pngwing.com.png'
 
 const Second = () => {
     const user = {
