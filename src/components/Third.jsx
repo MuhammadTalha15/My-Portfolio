@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/third.css'
 import Polygon from '../assets/Logo/pngwing.com.png'
 
 const Third = () => {

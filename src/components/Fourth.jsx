@@ -1,5 +1,6 @@
 import React from 'react'
 import Polygon from '../assets/Logo/pngwing.com.png'
+import '../styles/fourth.css'
 
 const Fourth = () => {
   return (

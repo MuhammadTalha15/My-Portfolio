@@ -5,7 +5,6 @@ import GithubLogo from '../assets/Icons/github.svg'
 import FacebookLogo from '../assets/Icons/facebook.svg'
 import InstagramLogo from '../assets/Icons/instagram.svg'
 import StackLogo from '../assets/Icons/stack-overflow.svg'
-import Polygon from '../assets/Logo/pngwing.com.png'
 
 const First = () => {
 
@@ -41,7 +40,6 @@ const First = () => {
             </div>
           </div>
 
-          {/* <img className='polygon-i' src={Polygon} alt="" /> */}
         </section>
     </>
   )

@@ -1,8 +1,5 @@
 import { useState } from 'react'
 import './styles/App.css'
-import './styles/second.css'
-import './styles/third.css'
-import './styles/fourth.css'
 import Navbar from './components/navbar'
 import First from './components/First'
 import Second from './components/Second'
@@ -19,15 +16,15 @@ function App() {
       element: <><Navbar /><First /></>
     },
     {
-      path: "/about",
+      path: "/About",
       element: <><Navbar /><Second /></>
     },
     {
-      path: "/projects",
+      path: "/Projects",
       element: <><Navbar /><Third /></>
     },
     {
-      path: "/contact",
+      path: "/Contact-Me",
       element: <><Navbar /><Fourth /></>
     }
   ])

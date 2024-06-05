@@ -17,6 +17,7 @@ const Second = () => {
     <section className="second">
           <section className='s-header'>
             <h2 className='s-head'>ABOUT</h2>
+              <span className='s-head-after'>Who am I?</span>
           </section>
           <section className="s-content">
             <section className="cont left">
@@ -26,8 +27,7 @@ const Second = () => {
 
               <p className="second-para">As an intermediate-level computer science student, I am deeply immersed in various technology projects, showcasing a versatile skill set in web development, desktop applications, and data science. My primary tools include JavaScript, Python, React, Express, MongoDB, and C++. Javascript, React are done for my Frontend Projects, comprising Express and MongoDB responsible for Backend. Python is done for Data Science and Desktop Application with company of C++.</p>
 
-              <button className='s-btn cv'>MY RESUME</button>
-              <button className='s-btn slrn'>Learn More</button>
+              <button className='s-btn'>MY RESUME</button>
             </section>
             <section className="cont right">
               <div className="details">
@@ -49,7 +49,7 @@ const Second = () => {
                 </ul>
               </div>
             </section>
-            <img className='polygon-ii' src={Polygon} alt="" />
+            {/* <img className='polygon-ii' src={Polygon} alt="" /> */}
           </section>
         </section>
     </>

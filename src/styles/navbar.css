@@ -12,14 +12,17 @@ header{
 
 .logo{
     width: 25rem;
+    user-select: none;
+    pointer-events: none;
 }
 
 .navbar{
     height: 50%;
-    width: 60rem;
+    width: 65rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: red; */
 }
 
 ul{
@@ -34,6 +37,11 @@ ul li.nav-li{
     font-family: sans-serif;
     cursor: pointer;
     color: #fff;
+    transition: 0.4s;
+}
+
+ul li.nav-li:hover{
+    color: rgb(0, 202, 78);
 }
 
 ul li.nav-li::after{
@@ -41,7 +49,7 @@ ul li.nav-li::after{
     content: '';
     height: 3px;
     width: 0%;
-    background-color: #fff;
+    background-color: rgb(0, 202, 78);
     left: 0;
     bottom: -10px;
     transition: 0.4s;
@@ -67,7 +75,7 @@ ul li.nav-li:hover::after{
     }
 
     .navbar{
-        width: 48rem;
+        width: 52rem;
     }
 
     li.nav-li{
@@ -96,7 +104,7 @@ ul li.nav-li:hover::after{
         left: 0;
         height: 50rem;
         width: 100%;
-        background-color: #0f131abe;
+        background-color: #131313be;
         transition: 0.3s;
         z-index: -10;
     }
@@ -106,7 +114,7 @@ ul li.nav-li:hover::after{
         left: 0;
         height: 90vh;
         width: 100%;
-        background-color: #0f131abe;
+        background-color: #131313be;
         transition: 0.3s;
         z-index: -10;
     }
@@ -115,7 +123,6 @@ ul li.nav-li:hover::after{
         height: 100%;
         width: 100%;
         list-style: none;
-
         display: flex;
         align-items: center;
         justify-content: center;

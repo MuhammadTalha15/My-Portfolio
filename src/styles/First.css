@@ -122,11 +122,6 @@
     filter: invert(100%) sepia(66%) saturate(286%) hue-rotate(305deg) brightness(116%) contrast(100%);;
   }
   
-  .polygon-i{
-    position: absolute;
-    right: -20%;
-    bottom: -45%;
-  }
 
   @media(max-width: 1366px){
     .txt-cnt{
@@ -195,12 +190,6 @@
       width: 1.5rem;
     }
 
-    .polygon-i{
-      position: absolute;
-      width: 95rem;
-      right: -20%;
-      bottom: -45%;
-    }
   }
   
   
@@ -266,21 +255,10 @@
       width: 1.5rem;
     }
 
-    .polygon-i{
-      position: absolute;
-      width: 95rem;
-      right: -20%;
-      bottom: -45%;
-    }
   }
   
   @media(max-width: 1024px){
-    .polygon-i{
-      width: 80rem;
-      right: -30%;
-      bottom: -5%;
-      transform: rotateZ(-90deg);
-    }
+
   }
   
   @media(max-width: 990px){
@@ -345,12 +323,6 @@
       width: 1.5rem;
     }
 
-    .polygon-i{
-      width: 100rem;
-      right: -30%;
-      bottom: -5%;
-      transform: rotateZ(-90deg);
-    }
   }
   
   @media(max-width: 600px){
@@ -373,12 +345,6 @@
       overflow: hidden;
     }
 
-    .polygon-i{
-      width: 80rem;
-      right: -50%;
-      bottom: -40%;
-      transform: rotateZ(-90deg);
-    }
   }
   
   @media(max-width: 415px){
@@ -468,13 +434,6 @@
     .social-btn-cnt{
       left: -4rem;
       bottom: 15rem;
-    }
-
-    .polygon-i{
-      width: 70rem;
-      right: -30%;
-      bottom: -40%;
-      transform: rotateZ(0deg);
     }
   }
 

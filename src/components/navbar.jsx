@@ -20,9 +20,9 @@ const Navbar = (props) => {
       <nav id='nav' className={navbarClass}>
         <ul>
           <Link to="/My-Portfolio"><li className='nav-li'>Home Page</li></Link>
-          <Link to="/about"><li className='nav-li'>About Me</li></Link>
-          <Link to="/projects"><li className='nav-li'>Projects</li></Link>
-          <Link to="/contact"><li className='nav-li'>Contact Me</li></Link>
+          <Link to="/About"><li className='nav-li'>About Me</li></Link>
+          <Link to="/Projects"><li className='nav-li'>Projects</li></Link>
+          <Link to="/Contact-Me"><li className='nav-li'>Contact Me</li></Link>
         </ul>
       </nav>
 
