@@ -6,7 +6,7 @@ const Second = () => {
         name: 'Muhammad Talha',
         dob: '18 July 2007',
         email: 'talhaz5518@gmail.com',
-        adress: 'House 10, Block K, Naval Anchorage, Islamabad',
+        adress: 'Naval Anchorage, Islamabad',
         phone: '(+92)333-545-9231',
         lang: 'English, Urdu'
       }
@@ -48,7 +48,6 @@ const Second = () => {
                 </ul>
               </div>
             </section>
-            {/* <img className='polygon-ii' src={Polygon} alt="" /> */}
           </section>
         </section>
     </>

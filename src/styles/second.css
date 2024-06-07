@@ -44,13 +44,13 @@
 
 .s-content{
     position: relative;
-    height: 60rem;
+    height: 75%;
     width: 100%;
-    /* border: 1px solid; */
+    /* border: 1px solid;    */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5rem 10rem;
+    padding: 2rem 10rem;
     /* background-color: rebeccapurple; */
 }
 
@@ -58,6 +58,9 @@
     height: 100%;
     width: 50%;
     /* border: 1px solid; */
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .left{
@@ -100,7 +103,7 @@
 .s-btn:hover{
     background-color: #fff;
     color: #000;
-    border: none;
+    border: 1px solid #fff;
 }
 
 .slrn{
@@ -116,7 +119,8 @@
 .right{
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .details{
@@ -140,7 +144,7 @@
 .dtail-li-hd{
     margin: 2rem 0;
     font-family: var(--Poppins);
-    color: #bbbbbb;
+    color: rgb(0, 202, 78);
     font-size: 1.5rem;
 }
 
@@ -166,9 +170,14 @@
 
 
 @media(max-width: 1366px){
-    /* html{
+    html{
         font-size: 9px;
-    } */
+    }
+
+    .left{
+        padding: 0 5rem;
+        padding-top: 5rem;
+    }
 
   }
   
@@ -181,7 +190,7 @@
   }
   
   @media(max-width: 1024px){
-
+    
   }
   
   @media(max-width: 990px){
@@ -202,6 +211,89 @@
         padding-top: 13rem;
     }
 
+  }
+
+  @media(max-width: 500px){
+
+    .second{
+        height: 160vh;
+        width: 100%;
+    }
+  
+    .s-header{
+        height: 25rem;
+        padding-top: 13rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .s-head{
+        font-size: 10rem;
+    }
+
+    .s-content{
+        position: relative;
+        height: 130rem;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .cont{
+        height: 100%;
+        width: 45rem;
+    }
+
+    .dtail-li-hd{
+        align-self: start;
+        font-size: 1.4rem;
+        width: 10rem;
+    }
+
+    .data-list{
+        align-items: flex-start;
+        padding: 0 4rem;
+    }
+
+    .dtail-data{
+        font-size: 1.4rem;
+    }
+
+    .left{
+        height: 60%;
+        padding: 0 2rem;
+        padding-top: 1rem !important;
+    }
+
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5rem;
+    }
+
+    .s-btn{
+        height: 4rem;
+        width: 20rem;
+        margin: 3rem 0;
+        font-size: 1.2rem;
+    }
+
+    .right{
+        height: 50%;
+    }
+
+    .heading-cont{
+        font-size: 2.5rem;
+    }
+
+    .second-para{
+        font-family: var(--Poppins);
+        color: var(--font-color-default);
+        font-size: 1.2rem;
+    }
+    
   }
   
   @media(max-width: 415px){

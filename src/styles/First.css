@@ -79,8 +79,7 @@
     width: 20rem;
     background-color: transparent;
     border: 1px solid rgb(0, 160, 61);
-    /* background-color: rgb(0, 160, 61); */
-    color: rgb(0, 202, 78);
+    text-decoration: none;
     font-size: 1.5rem;
     font-family: 'Poppins',sans-serif;
     margin: 2rem 3rem;
@@ -88,40 +87,27 @@
     transition: 0.2s;
     cursor: pointer;
   }
-  
-  .cntct:hover{
-    background-color: #fff;
-    color: #000;
-  }
-  
-  .social-btn-cnt{
+
+  .linker{
     position: absolute;
-    height: 5rem;
-    width: 30rem;
+    text-decoration: none;
+    color: rgb(0, 202, 78);
+    transition: 0.2s;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
-    left: 50rem;
-    bottom: 8rem;
   }
   
-  .a{
-    position: relative;
-    width: 2.2rem;
-    margin: 2rem 0;
+  /* .cntct:hover , */
+  .cntct:hover .linker{
+    background-color: #fff;
+    color: #000;
   }
-  
-  .social{
-    width: 2rem;
-    filter: invert(60%) sepia(72%) saturate(3480%) hue-rotate(105deg) brightness(99%) contrast(101%);
-    transition: 0.1s;
-  }
-  
-  .a:hover .social{
-    filter: invert(100%) sepia(66%) saturate(286%) hue-rotate(305deg) brightness(116%) contrast(100%);;
-  }
-  
+
 
   @media(max-width: 1366px){
     .txt-cnt{
@@ -177,54 +163,43 @@
       color: #000;
     }
 
-    .social-btn-cnt{
-      right: 10rem;
-      bottom: 7rem;
-    }
-    .a{
-      position: relative;
-      width: 2rem;
-      margin: 2rem 0;
-    }
-    .social{
-      width: 1.5rem;
-    }
 
   }
   
   
   @media(max-width: 1280px){
     .txt-cnt{
-      width: 65rem;
-      padding: 20rem 0;
+      width: 80rem;
+      padding: 15rem 0;
+      /* background-color: red; */
     }
   
     .greeting{
-      font-size: 7rem;
+      font-size: 10rem;
       margin: 0 3rem;
-      color: rgba(0,0,0,0.5);
+      color: transparent;
       font-family: 'Poppins',sans-serif;
       font-weight: 600;
     }
     
     .name{
-      font-size: 4.5rem;
+      font-size: 6rem;
       font-family: 'Poppins',sans-serif;
       font-weight: 300;
     }
     
     .naming{
-      font-size: 2.5rem;
+      font-size: 3rem;
       color: #fff;
       font-family: 'Comfortaa',cursive;
     }
 
     .intro{
-      font-size: 2rem;
+      font-size: 3rem;
     }
   
     .para{
-      font-size: 1.3rem;
+      font-size: 1.8rem;
       font-family: 'Poppins',sans-serif;
       font-weight: 300;
       color: #d3d3d3;
@@ -232,27 +207,14 @@
     }
   
     .cntct{
-      height: 4rem;
-      width: 18rem;
-      font-size: 1.2rem;
+      height: 5rem;
+      width: 20rem;
+      font-size: 1.5rem;
     }
     
     .cntct:hover{
       background-color: #fff;
       color: #000;
-    }
-
-    .social-btn-cnt{
-      right: 10rem;
-      bottom: 9rem;
-    }
-    .a{
-      position: relative;
-      width: 2rem;
-      margin: 2rem 0;
-    }
-    .social{
-      width: 1.5rem;
     }
 
   }
@@ -308,19 +270,6 @@
     .cntct:hover{
       background-color: #fff;
       color: #000;
-    }
-
-    .social-btn-cnt{
-      right: 10rem;
-      bottom: 6rem;
-    }
-    .a{
-      position: relative;
-      width: 2rem;
-      margin: 2rem 0;
-    }
-    .social{
-      width: 1.5rem;
     }
 
   }

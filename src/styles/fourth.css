@@ -8,12 +8,13 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color: #0A0D13;
+    background-color: #131313;
     overflow: hidden;
 }
 
 .f-header{
     height: 20rem;
+    padding-top: 10rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -24,102 +25,99 @@
     position: relative;
     font-size: 12rem;
     font-family: var(--Poppins);
-    color: rgba(0, 0, 0, 0.404);
+    color: transparent;
     user-select: none;
+    -webkit-text-stroke: 1.5px rgb(0, 202, 78);
 }
 
-.f-head::after{
+.f-head-after{
     position: absolute;
+    font-family: var(--Poppins);
     content: "Feel Free to Email Me";
     font-weight: 300;
-    width: 40rem;
     color: #bbbbbb;
     font-size: 3.5rem;
-    top: 35%;
-    left: 30%;
 }
 
 .inpt-frm-cont-cnt{
-    height: 55rem;
+    height: 80%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid; */
+    font-size: 10px;
 }
 
-.wrapper{
-    position: relative;
-    height: 50rem;
-    width: 100rem;
+.container{
+    height: 45em;
+    width: 70vmax;
+    background-color: #1f1f1f;
     display: flex;
-    z-index: 100;
-    filter: drop-shadow(0 2rem 1rem rgba(0,0,0,0.5));
-}
-
-.img{
-    height: 50rem;
-    width: 50rem;
-    background-image: linear-gradient(rgba(10,13,19,0.5),rgba(10,13,19,0.5)),url(../assets/Images/pexels-fauxels-3184454.jpg);
-    background-size: cover;
-    background-position: -15rem 0;
-}
-
-.frm{
-    height: 50rem;
-    width: 50rem;
-    background-color: #0f131a;
-    display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 5rem;
-    gap: 2rem;
+    gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 5rem;
+    box-shadow: 3px 3px 10px rgba(100,100,100,0.2),
+                -3px -3px 10px rgba(100, 100, 100, 0.2);
 }
 
-
-.input{
+.social-btn-cnt{
     height: 5rem;
-    width: 40rem;
-    background-color: rgba(0,0,0,0.5);
-    border: none;
-    padding: 1rem 2rem;
-    color: #fff;
-    font-size: 1.7rem;
-    font-family: var(--Poppins);
-    outline: none;
-}
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;     
+    bottom: 1rem;
+  }
+  
+  .a{
+    position: relative;
+    width: 2.2rem;
+    margin: 2rem 0;
+    user-select: none;
+  }
+  
+  .social{
+    width: 2rem;
+    filter: invert(60%) sepia(72%) saturate(3480%) hue-rotate(105deg) brightness(99%) contrast(101%);
+    transition: 0.1s;
+  }
+  
+  .a:hover .social{
+    filter: invert(100%) sepia(66%) saturate(286%) hue-rotate(305deg) brightness(116%) contrast(100%);;
+  }
 
-.message{
+  .email{
+    font-family: var(--Poppins);
+    color: gray;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  .profile-pic{
     height: 15rem;
-}
-
-::placeholder{
-    color: #bbbbbb;
-    font-weight: 200;
-    font-size: 1.5rem;
-}
-
-.message-sub{
-    height: 5rem;
-    width: 20rem;
-    margin: 1rem 0;
-    background-color: transparent;
-    font-family: var(--Poppins);
-    border: 1px solid var(--font-color-default);
-    color: var(--font-color-default);
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.message-sub:hover{
-    color: #000;
-    background-color: var(--font-color-default);
-}
-
-.poly-iv{
-    position: absolute;
-    left: -30%;
-    bottom: -60rem;
-    pointer-events: none;
-}
+    width: 15rem;
+    background-image: url(../assets/Images/profile-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 202, 78);
+    box-shadow: 0 0 15px rgba(150, 150, 150, 0.5);
+  }
+  @media (max-width: 600px){
+    .f-head{
+        position: relative;
+        font-size: 12vw;
+        font-family: var(--Poppins);
+        color: transparent;
+        user-select: none;
+        -webkit-text-stroke: 1.5px rgb(0, 202, 78);
+    }
+    .f-head-after{
+        font-size: 3.5vw;
+    }
+  }
