@@ -12,7 +12,7 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/My-Portfolio",
+      path: "/",
       element: <><Navbar /><First /></>
     },
     {
